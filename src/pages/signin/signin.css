@@ -1,0 +1,121 @@
+/* Signin Page Modern Styles */
+:root {
+  --bg-gradient: linear-gradient(135deg, #e9efff 0%, #f4f7ff 40%, #fdf2f8 100%);
+  --card-bg: rgba(255, 255, 255, 0.72);
+  --card-border: rgba(255, 255, 255, 0.6);
+  --text-strong: #111827;
+  --text: #374151;
+  --muted: #6b7280;
+  --input-bg: #f8fafc;
+  --input-border: #e5e7eb;
+  --ring: rgba(59, 130, 246, 0.25);
+  --primary-start: #6366f1;
+  --primary-end: #22c55e;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--bg-gradient);
+}
+
+.login-form {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 10px 40px rgba(17, 24, 39, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.login-form:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 46px rgba(17, 24, 39, 0.12);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: var(--text-strong);
+}
+
+.login-form input {
+  width: 100%;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-top: 12px;
+  font-size: 15px;
+  color: var(--text);
+  transition: border-color 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+.login-form input::placeholder {
+  color: #9ca3af;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #93c5fd;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.login-form button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+  box-shadow: 0 8px 18px rgba(99, 102, 241, 0.25);
+  transition: filter 140ms ease, transform 140ms ease, box-shadow 140ms ease, background-position 140ms ease;
+  background-size: 200% 200%;
+}
+
+.login-form button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.32);
+  background-position: 100% 0;
+}
+
+.login-form button:active {
+  transform: translateY(0);
+}
+
+/* Secondary action button (new user) */
+.login-form button[type="button"] {
+  background: transparent;
+  color: var(--text-strong);
+  border: 1px solid var(--input-border);
+  box-shadow: none;
+}
+
+.login-form button[type="button"]:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 22px 18px 18px;
+    border-radius: 14px;
+    max-width: 360px;
+  }
+  .login-form h2 { font-size: 22px; }
+  .login-form input { font-size: 14px; }
+}

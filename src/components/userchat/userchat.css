@@ -1,0 +1,52 @@
+.userchat{
+    background-color: #838c8c;
+    height: 76px;
+    display: flex;
+    width:100%;
+    border-bottom: 1px solid #f3f4f6;
+    margin-bottom: 0;
+    padding: 12px 14px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.userchat:hover{ background-color: #474449; }
+
+.userimage{
+    width:56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.userchat .userimage img{ border-radius: 50%; object-fit: cover; border: 2px solid #e5e7eb; }
+
+.userchat .userdetails{
+    flex: 1;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+.userdetails h4{ color:#111827; font-size:16px; font-weight:700; margin:0 0 4px 0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width: 220px; }
+.userdetails span{ color:#28282a; font-size:13px; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:220px; }
+
+.startchat{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.startchat button{
+    padding: 8px 14px;
+    border: none;
+    background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+    border-radius: 16px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter 0.2s ease, transform 0.05s ease;
+}
+.startchat button:hover{ filter: brightness(1.05); }
+.startchat button:active{ transform: translateY(1px); }   
