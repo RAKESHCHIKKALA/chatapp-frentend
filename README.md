@@ -17,10 +17,6 @@ It provides a responsive UI for users to register, log in, and chat in real time
 
 ## How to Run
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/RAKESHCHIKKALA/chatapp-frentend.git
-   cd chatapp-frentend
 
 Install dependencies:
 
