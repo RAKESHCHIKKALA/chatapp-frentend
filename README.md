@@ -38,10 +38,9 @@ Open http://localhost:5173
 
 ---
 
-### 🔹 Next Steps
-1. Replace the conflict text in `README.md` with the fixed version above.  
-2. Stage and commit:
-   ```bash
-   git add README.md
-   git commit -m "Resolved README.md conflict with project details"
-   git push -u origin main
+## Backend
+
+The backend for this ChatApp project is hosted in a separate repository:  
+[ChatApp Backend](https://github.com/RAKESHCHIKKALA/chatapp-backend)
+
+Make sure to follow the backend setup instructions before running the frontend.
